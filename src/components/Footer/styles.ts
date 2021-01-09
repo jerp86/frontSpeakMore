@@ -39,5 +39,5 @@ export const Social = styled.a.attrs({
   target: '_blank',
   rel: 'noopener noreferrer',
 })`
-  color: #8e734a;
+  color: #f4f2ed;
 `;
