@@ -1,7 +1,16 @@
 import React from 'react';
 
+import { Container, Title } from './styles';
+
+import Footer from '../../components/Footer';
+
 const Dashboard: React.FC = () => {
-  return <h1>Dashboard</h1>;
+  return (
+    <Container>
+      <Title>Bem vindo ao FaleMais - VxTel®</Title>
+      <Footer />
+    </Container>
+  );
 };
 
 export default Dashboard;
