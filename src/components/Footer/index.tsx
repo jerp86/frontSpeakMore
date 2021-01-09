@@ -9,7 +9,13 @@ const Footer: React.FC = () => {
 
   return (
     <Container>
-      <Message>Desenvolvido por Jerp</Message>
+      <Social href="https://vortx.com.br/">
+        <img
+          src={logo}
+          alt="Logo Vórtx"
+          title="Vórtx | Inovação e transparência em serviços fiduciários"
+        />
+      </Social>
 
       <LinkIcons>
         <Social href="https://www.linkedin.com/in/jerp/">
@@ -23,14 +29,7 @@ const Footer: React.FC = () => {
         </Social>
       </LinkIcons>
 
-      {/* <Message>Desenvolvido por Jerp©</Message> */}
-      <Social href="https://vortx.com.br/">
-        <img
-          src={logo}
-          alt="Logo Vórtx"
-          title="Vórtx | Inovação e transparência em serviços fiduciários"
-        />
-      </Social>
+      <Message>Desenvolvido por Jerp</Message>
     </Container>
   );
 };
