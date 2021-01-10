@@ -37,14 +37,15 @@ export const ContentForm = styled.form`
   input,
   select {
     height: 2.5rem;
-    min-width: 9.375rem;
+    max-width: 10rem;
+    min-width: 5rem;
     border: none;
     background-color: #ecf0f9;
     padding: 0.5rem;
     color: #8e734a;
 
     @media (max-width: 768px) {
-      min-width: 5rem;
+      max-width: 5rem;
     }
 
     :hover {
