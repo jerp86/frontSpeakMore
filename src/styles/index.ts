@@ -15,7 +15,7 @@ export default createGlobalStyle`
     font-size: 20px;
     min-height: 100vh;
     -webkit-font-smoothing:  antialiased !important;
-    color: #343434;
+    color: #8e734a;
 
     background-image: url(${image});
     background-position: 70% top;
