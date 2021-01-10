@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { shade } from 'polished';
+
 export const Container = styled.div`
   width: 60vw;
   height: 100%;
@@ -65,6 +67,17 @@ export const First = styled.div`
     font-weight: bold;
     font-size: 1.75rem;
     line-height: 1.875rem;
+
+    a {
+      color: #f4f2ed;
+      display: block;
+      text-decoration: none;
+      transition: color 0.2s;
+
+      &:hover {
+        color: ${shade(0.2, '#f4f2ed')};
+      }
+    }
   }
 
   p {
