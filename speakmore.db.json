@@ -1,0 +1,79 @@
+{
+  "ddds": [
+    {
+      "id": "61b28d21-1b88-4835-b0d2-4350751ceec7",
+      "code": "11",
+      "description": "64 cidades localizadas na macro-região de São Paulo capital."
+    },
+    {
+      "id": "6c59360a-e2a2-46eb-a968-a050a1f80058",
+      "code": "16",
+      "description": "74 cidades localizadas na macro-região de Ribeirão Preto"
+    },
+    {
+      "id": "bde21f11-40f8-4303-ae9e-6bd8159b84cb",
+      "code": "17",
+      "description": "117 cidades localizadas na macro-região de São José do Rio Preto."
+    },
+    {
+      "id": "bc354d37-bd81-4133-8909-fe2b33b34d81",
+      "code": "18",
+      "description": "108 cidades localizadas na macro-região de Presidente Prudente."
+    }
+  ],
+  "products": [
+    {
+      "id": "3286bc51-6696-4699-84dc-8d6aa0de65c1",
+      "value": 30,
+      "description": "FaleMais 30"
+    },
+    {
+      "id": "a6fe26c1-e070-4f01-b33b-8dadab1370af",
+      "value": 60,
+      "description": "FaleMais 60"
+    },
+    {
+      "id": "c7654c99-5e42-4bcb-817b-f3323d5173af",
+      "value": 120,
+      "description": "FaleMais 120"
+    }
+  ],
+  "plans": [
+    {
+      "id": "cb5b8b53-7536-4569-9573-9680984afbe6",
+      "origin": 11,
+      "destiny": 16,
+      "value": 1.90
+    },
+    {
+      "id": "e0a3596a-bb72-40bb-a802-14770bf90148",
+      "origin": 11,
+      "destiny": 17,
+      "value": 1.70
+    },
+    {
+      "id": "5767aeb5-6752-4e67-873a-0e37bd49b0ce",
+      "origin": 11,
+      "destiny": 18,
+      "value": 0.90
+    },
+    {
+      "id": "2305e523-6d1a-472b-8cf0-a0f4e84e6bd1",
+      "origin": 16,
+      "destiny": 11,
+      "value": 2.90
+    },
+    {
+      "id": "38019cd1-6bd2-4c4d-885c-a538dfc5c48c",
+      "origin": 17,
+      "destiny": 11,
+      "value": 2.70
+    },
+    {
+      "id": "dbb28c81-f1e6-4f04-98cc-505cdfed0799",
+      "origin": 18,
+      "destiny": 11,
+      "value": 1.90
+    }
+  ]
+}
