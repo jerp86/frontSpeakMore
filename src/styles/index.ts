@@ -21,10 +21,6 @@ export default createGlobalStyle`
     background-position: 70% top;
     background-size: cover;
     background-repeat: no-repeat;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   body, input, button {
