@@ -8,7 +8,7 @@ const List: React.FC = () => {
   const [plans, setPlans] = useState<ItemListProps[]>([]);
 
   useEffect(() => {
-    const url = 'http://localhost:3334/plans';
+    const url = 'http://192.168.15.13:3334/plans';
     fetch(url)
       .then(resp => resp.json())
       .then(data => {
