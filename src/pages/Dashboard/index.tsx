@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
 import { ButtonModify, Container, Enter, Title } from './styles';
 
 import Footer from '../../components/Footer';
@@ -12,7 +13,9 @@ const Dashboard: React.FC = () => {
 
       <List />
       <Enter>
-        <ButtonModify>Vamos comparar?</ButtonModify>
+        <Link to="/speakmore">
+          <ButtonModify>Vamos comparar?</ButtonModify>
+        </Link>
       </Enter>
       <Footer />
     </Container>

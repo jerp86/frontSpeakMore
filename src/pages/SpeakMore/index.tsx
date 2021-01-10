@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
 import { Container, Content, First } from './styles';
 
 import Form from '../../components/Form';
@@ -10,7 +11,7 @@ const SpeakMore: React.FC = () => (
     <Content>
       <First>
         <h2>
-          Conheça o <br /> FaleMais VxTel©
+          Conheça o <br /> <Link to="/">FaleMais</Link> VxTel©
         </h2>
         <p>Compare o custo de suas ligações</p>
       </First>
