@@ -1,7 +1,6 @@
 import React from 'react';
-import Button from '../Button';
 
-import { Second, ContentForm } from './styles';
+import { Second, ContentForm, ButtonList } from './styles';
 
 const Form: React.FC = () => {
   return (
@@ -42,7 +41,7 @@ const Form: React.FC = () => {
         </label>
       </ContentForm>
 
-      <Button>Calcular</Button>
+      <ButtonList>Calcular</ButtonList>
     </Second>
   );
 };

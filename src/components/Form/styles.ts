@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Button from '../Button';
 
 export const Second = styled.div`
   color: #8e734a;
@@ -59,6 +60,19 @@ export const ContentForm = styled.form`
     &:-webkit-autofill {
       -webkit-text-fill-color: #b92c2c;
     }
+  }
+`;
+
+export const ButtonList = styled(Button)`
+  font-size: 1.5rem;
+  background-color: #8e734a;
+
+  @media (max-width: 768) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 500) {
+    font-size: 0.875rem;
   }
 `;
 
