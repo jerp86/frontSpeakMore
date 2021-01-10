@@ -23,8 +23,8 @@ interface IPlanProps {
 
 const Form: React.FC = () => {
   const [ddds, setDdds] = useState<IDddProps[]>([]);
-  const [originSelected, setOriginSelected] = useState<number | undefined>();
-  const [destinySelected, setDestinySelected] = useState<number | undefined>();
+  const [originSelected, setOriginSelected] = useState(0);
+  const [destinySelected, setDestinySelected] = useState(0);
   const [products, setProducts] = useState<IProductProps[]>([]);
   const [plans, setPlans] = useState<IPlanProps[]>([]);
 
@@ -63,20 +63,16 @@ const Form: React.FC = () => {
     [plans],
   );
 
-  const setOrigin = useCallback((event: any): void => {
-    setOriginSelected(event.target.value);
-  }, []);
-
-  const setDestiny = useCallback((event: any): void => {
-    setDestinySelected(event.target.value);
-  }, []);
-
   return (
     <Second>
       <ContentForm>
         <label htmlFor="origin">
           Origem:
-          <select id="origin" onChange={setOrigin} required>
+          <select
+            id="origin"
+            onChange={e => setOriginSelected(Number(e.target.value))}
+            required
+          >
             <option hidden>Escolha a Origem</option>
             {ddds &&
               ddds.map(({ id, code, description }) => (
@@ -89,7 +85,11 @@ const Form: React.FC = () => {
 
         <label htmlFor="destiny">
           Destino:
-          <select id="destiny" onChange={setDestiny} required>
+          <select
+            id="destiny"
+            onChange={e => setDestinySelected(Number(e.target.value))}
+            required
+          >
             <option hidden>Escolha o Destino</option>
             {originSelected && getDestiny(originSelected)}
           </select>
@@ -115,8 +115,8 @@ const Form: React.FC = () => {
             type="number"
             min="1"
             max="250"
-            name="tempo"
-            id="tempo"
+            name="time"
+            id="time"
             placeholder="Informe os minutos..."
             autoComplete="new-password"
           />
