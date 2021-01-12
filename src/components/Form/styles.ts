@@ -37,15 +37,15 @@ export const ContentForm = styled.form`
   input,
   select {
     height: 2.5rem;
-    max-width: 10rem;
+    max-width: 15rem;
     min-width: 5rem;
     border: none;
     background-color: #ecf0f9;
     padding: 0.5rem;
     color: #8e734a;
 
-    @media (max-width: 768px) {
-      max-width: 5rem;
+    @media (max-width: 500px) {
+      min-width: 10rem;
     }
 
     :hover {
@@ -76,5 +76,3 @@ export const ButtonList = styled(Button)`
     font-size: 0.875rem;
   }
 `;
-
-export const Results = styled.div``;
