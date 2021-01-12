@@ -12,10 +12,10 @@ export default createGlobalStyle`
   }
 
   body {
-    font-size: 20px;
+    font-size: 16px;
+    color: #8e734a;
     min-height: 100vh;
     -webkit-font-smoothing:  antialiased !important;
-    color: #8e734a;
 
     background-image: url(${image});
     background-position: 70% top;
@@ -25,6 +25,10 @@ export default createGlobalStyle`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 500px) {
+      display: block;
+    }
   }
 
   body, input, button {
@@ -34,7 +38,11 @@ export default createGlobalStyle`
   #root {
     max-width: 60rem;
     margin: 0 auto;
-    padding: 2.5rem 1.25rem;
+    padding: 1rem 0.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   button {
