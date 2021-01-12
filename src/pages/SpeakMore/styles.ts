@@ -7,6 +7,7 @@ export const Container = styled.div`
   height: 100%;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -100,5 +101,39 @@ export const First = styled.div`
 
   @media (max-width: 500px) {
     display: none;
+  }
+`;
+
+export const Results = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1%;
+  font-size: 1.5rem;
+
+  width: 50vw;
+
+  h2:nth-child(1) {
+    background-color: #f4f2edf8;
+    color: #8e734a;
+  }
+
+  h2:nth-child(2) {
+    color: #f4f2ed;
+
+    span {
+      color: #cb1e25;
+    }
+  }
+
+  span {
+    font-weight: bold;
+  }
+
+  @media (max-width: 400px) {
+    width: 100%;
+
+    text-align: center;
+    font-size: 1rem;
   }
 `;
