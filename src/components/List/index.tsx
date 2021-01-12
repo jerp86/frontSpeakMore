@@ -3,17 +3,15 @@ import React, { ReactNode, useEffect, useState } from 'react';
 import { Container, P } from './styles';
 
 import ItemList, { ItemListProps } from './ItemList';
+import api from '../../services/api';
 
 const List: React.FC = () => {
   const [plans, setPlans] = useState<ItemListProps[]>([]);
 
   useEffect(() => {
-    const url = 'http:////192.168.15.13:3334/plans';
-    fetch(url)
-      .then(resp => resp.json())
-      .then(data => {
-        setPlans(data.map((plan: ItemListProps) => plan));
-      });
+    api.get(`/plans`).then(response => {
+      setPlans(response.data.map((res: ItemListProps) => res));
+    });
   }, []);
 
   const createList = (list: ItemListProps[]): ReactNode =>
