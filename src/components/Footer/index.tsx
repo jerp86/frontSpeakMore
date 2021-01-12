@@ -29,7 +29,9 @@ const Footer: React.FC = () => {
         </Social>
       </LinkIcons>
 
-      <Message>Desenvolvido por Jerp</Message>
+      <Message>
+        <span>Desenvolvido por </span>Jerp
+      </Message>
     </Container>
   );
 };

@@ -24,6 +24,12 @@ export const Message = styled.span`
   font-size: 0.75rem;
   font-style: italic;
   color: #f4f2ed;
+
+  @media (max-width: 400px) {
+    span {
+      display: none;
+    }
+  }
 `;
 
 export const LinkIcons = styled.div`
